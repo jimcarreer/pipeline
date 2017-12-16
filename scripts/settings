@@ -1,0 +1,8 @@
+export DOCKER_VOL=/opt/example/volumes
+export DOCKER_CA_CERT=/opt/example/certs/ca/example.com.ca.crt
+export DOCKER_PIPELINE_CERT=/opt/example/certs/dev.example.com.crt
+export DOCKER_PIPELINE_KEY=/opt/example/certs/dev.example.com.key
+export DOCKER_PIPELINE_DNSROOT=dev.example.com
+export DOCKER_PIPELINE_NET=pipeline
+export ARTIFACTORY_USER=build-agent
+export ARTIFACTORY_PASS=test

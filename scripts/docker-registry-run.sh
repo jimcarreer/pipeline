@@ -1,7 +1,7 @@
 source settings
 echo "server {
     listen                    443 ssl;
-    server_name               docker.dev.example.com;
+    server_name               docker.$DOCKER_PIPELINE_DNSROOT;
     ssl_certificate           /etc/certs/nginx.crt;
     ssl_certificate_key       /etc/certs/nginx.key;
     ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;

@@ -11,6 +11,6 @@ docker run --detach \
     --volume $DOCKER_VOL/gitlab-runner/config:/etc/gitlab-runner \
     --volume /var/run/docker.sock:/var/run/docker.sock \
     --volume $DOCKER_VOL/gitlab-runner/runner-home:/home/gitlab-runner \
-    --volume $DOCKER_CA_CERT:/etc/gitlab-runner/certs/ca.crt:ro \
+    --volume $DOCKER_CA_CERT:/etc/gitlab-runner/certs/gitlab.$DOCKER_PIPELINE_DNSROOT\.crt:ro \
     gitlab/gitlab-runner:latest
 docker exec -it gitlab-runner gitlab-runner register
